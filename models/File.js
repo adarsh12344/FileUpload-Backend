@@ -33,10 +33,10 @@ fileSchema.post("save", async function (doc) {
     //send mail
 
     let info = await transporter.sendMail({
-      from: `Adarsh`,
+      from: `Enter the name of User`,
       to: doc.email,
       subject: "File Upload",
-      html: `<h2>Hi Push Past our limits </h2>  
+      html: `<h2>Require Message </h2>  
       <p>File uploaded successfully</p> View here :
        <a href="${doc.imageUrl}">View</a>`,
     });
